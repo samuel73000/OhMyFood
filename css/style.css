@@ -1,3 +1,110 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
 
+p {
+  font-size: 16px;
+}
+
+.header-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14px;
+}
+.header-block .header-logo {
+  width: 50%;
+}
+
+.loc-block {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loc-block .loc-img {
+  margin-right: 17px;
+}
+
+.explo-block {
+  width: 100%;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.explo-block .explo-titre-center {
+  padding: 0 20% 0 20%;
+  margin-bottom: -10px;
+  text-align: center;
+}
+.explo-block .explo-titre-center .titre {
+  font-size: 24px;
+  font-weight: 700px;
+  color: black;
+  line-height: 28.13px;
+}
+.explo-block .explo-texte-align {
+  text-align: center;
+  padding: 0 10% 0 10%;
+}
+.explo-block .btn {
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: 0px;
+  color: white;
+  height: 40px;
+  width: 50%;
+}
+
+.fonct-block {
+  width: 100%;
+  margin: 4%;
+}
+.fonct-block .fonct-titre-margin {
+  margin-bottom: -25px;
+}
+.fonct-block .fonct-case {
+  background: #f7f7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  height: 70px;
+  width: 85%;
+  margin-left: 15px;
+  margin-bottom: -25px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fonct-block .fonct-case .fonct-img {
+  margin-right: 27px;
+  color: #7e7e7e;
+}
+.fonct-block .fonct-num {
+  position: relative;
+  color: white;
+  background: #9356dc;
+  width: 25px;
+  height: 25px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 62px;
+  left: 2px;
+}
+.fonct-block .fonct-case:hover {
+  background-color: #e3cffa;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,130 @@
+// mixin
+@mixin btn-voilet-bleu-round {
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: 0px;
+  color: white;
+  height: 40px;
+  width: 50%;
+}
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin titre {
+  font-size: 24px;
+  font-weight: 700px;
+  color: black;
+  line-height: 28.13px;
+}
+@mixin vertical-align {
+  display: flex;
+  flex-direction: column;
+}
+@mixin horizontal-align {
+  display: flex;
+  flex-direction: row;
+}
+@mixin case-fonctionnement {
+  background: #f7f7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  height: 70px;
+  width: 85%;
+  margin-left: 15px;
+  margin-bottom: -25px;
+  font-weight: 500;
+  @include align-center;
+}
+
+// variable
+$color-primary: #9356dc;
+$color-gray: #eaeaea;
+// body
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-size: 16px;
+}
+
+// header
+.header-block {
+    // box-shadow: 0px 2px 4px  rgba(0, 0, 0, 0.15);
+  width: 100%;
+  @include align-center;
+  padding-top: 14px;
+  .header-logo {
+    width: 50%;
+  }
+}
+// localisation
+.loc-block {
+  width: 100%;
+  height: 50px;
+  background-color: $color-gray;
+  @include align-center;
+  .loc-img {
+    margin-right: 17px;
+  }
+}
+// explorer nos restaurants
+.explo-block {
+  width: 100%;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  @include align-center;
+  @include vertical-align;
+  .explo-titre-center {
+    padding: 0 20% 0 20%;
+    margin-bottom: -10px;
+    text-align: center;
+    .titre {
+      @include titre;
+    }
+  }
+  .explo-texte-align {
+    text-align: center;
+    padding: 0 10% 0 10%;
+  }
+  .btn {
+    @include btn-voilet-bleu-round;
+  }
+}
+//   fontionnement
+.fonct-block {
+  width: 100%;
+  margin: 4%;
+  .fonct-titre-margin {
+    margin-bottom: -25px;
+  }
+  .fonct-case {
+    @include case-fonctionnement;
+    .fonct-img {
+      margin-right: 27px;
+      color: #7e7e7e;
+    }
+  }
+  .fonct-num {
+    position: relative;
+    color: white;
+    background: $color-primary;
+    width: 25px;
+    height: 25px;
+    border-radius: 24px;
+    @include align-center;
+    z-index: 1;
+    top: 62px;
+    left: 2px;
+  }
+  .fonct-case:hover {
+    background-color: #e3cffa;
+  }
+  // .fonct-img:hover{
+  //     color: $color-primary;
+  // }
+}
+// restaurants
