@@ -1,46 +1,7 @@
 // mixin
-@mixin btn-voilet-bleu-round {
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
-  border-radius: 25px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border: 0px;
-  color: white;
-  height: 40px;
-  width: 50%;
-}
-@mixin align-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@mixin titre {
-  font-size: 24px;
-  font-weight: 700px;
-  color: black;
-  line-height: 28.13px;
-}
-@mixin vertical-align {
-  display: flex;
-  flex-direction: column;
-}
-@mixin horizontal-align {
-  display: flex;
-  flex-direction: row;
-}
-@mixin case-fonctionnement {
-  background: #f7f7f7;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  height: 70px;
-  width: 85%;
-  margin-left: 15px;
-  margin-bottom: -25px;
-  font-weight: 500;
-  @include align-center;
-}
+@import "./utils/mixins";
 // variable
-$color-primary: #9356dc;
-$color-gray: #eaeaea;
+@import "./utils/variables";
 
 // body
 body {
@@ -50,10 +11,13 @@ body {
 p {
   font-size: 16px;
 }
+a {
+  text-decoration: none;
+}
 
 // header
 .header-block {
-  // box-shadow: 0px 2px 4px  rgba(0, 0, 0, 0.15);
+  // box-shadow: 0px 2px 4px  rgba(0, 0, 0, 0.15); box shadow ne fonctionne pas !!!!
   width: 100%;
   padding: 10px 0 10px 0;
   @include align-center;
@@ -106,8 +70,7 @@ p {
     @include case-fonctionnement;
 
     .fonct-icone {
-      margin-right: 27px;
-      margin-left: 15px;
+      margin: 0 27px 0 15px;
       color: #7e7e7e;
     }
   }
@@ -170,6 +133,7 @@ p {
     .restau-titre-prev_margin {
       margin-top: 15px;
       margin-left: 4%;
+      color: black;
       .restau-coeur {
         margin-left: 88%;
         font-size: 25px;
@@ -188,6 +152,7 @@ p {
       margin: -35px 0 0 4%;
       padding-bottom: 15px;
       font-size: 17px;
+      color: black;
     }
   }
 }

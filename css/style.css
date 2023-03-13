@@ -7,6 +7,10 @@ p {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-block {
   width: 100%;
   padding: 10px 0 10px 0;
@@ -87,8 +91,7 @@ p {
   align-items: center;
 }
 .fonct-block .fonct-case .fonct-icone {
-  margin-right: 27px;
-  margin-left: 15px;
+  margin: 0 27px 0 15px;
   color: #7e7e7e;
 }
 .fonct-block .fonct-num {
@@ -148,6 +151,7 @@ p {
 .restau-block .restau-prev .restau-titre-prev_margin {
   margin-top: 15px;
   margin-left: 4%;
+  color: black;
 }
 .restau-block .restau-prev .restau-titre-prev_margin .restau-coeur {
   margin-left: 88%;
@@ -160,6 +164,7 @@ p {
   margin: -35px 0 0 4%;
   padding-bottom: 15px;
   font-size: 17px;
+  color: black;
 }
 
 .footer-block {
