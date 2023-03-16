@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-block {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-block .header-logo {
+  width: 50%;
+}
+
+.loc-block {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loc-block .loc-img {
+  margin-right: 17px;
+}
+
+.explo-block {
+  width: 100%;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.explo-block .explo-titre-center {
+  padding: 0 20% 0 20%;
+  margin-bottom: -10px;
+  text-align: center;
+}
+.explo-block .explo-titre-center .titre {
+  font-size: 24px;
+  font-weight: 700px;
+  color: black;
+  line-height: 28.13px;
+}
+.explo-block .explo-texte-align {
+  text-align: center;
+  padding: 0 10% 0 10%;
+}
+.explo-block .btn {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: 0px;
+  color: white;
+  height: 40px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.fonct-block {
+  width: 100%;
+  margin: 4%;
+  padding-bottom: 10%;
+}
+.fonct-block .fonct-titre-margin {
+  margin-bottom: -25px;
+}
+.fonct-block .fonct-case {
+  background: #f7f7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  height: 70px;
+  width: 85%;
+  margin-left: 15px;
+  margin-bottom: -25px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.fonct-block .fonct-case .fonct-icone {
+  color: gray;
+  margin: 0 27px 0 15px;
+  transition: 1s;
+}
+.fonct-block .fonct-case:hover {
+  transition: 1s;
+  background-color: #F5EDFF;
+}
+.fonct-block .fonct-case:hover .fonct-icone {
+  transition: 1s;
+  color: #9356dc;
+}
+.fonct-block .fonct-num {
+  position: relative;
+  color: white;
+  background: #9356dc;
+  width: 25px;
+  height: 25px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 62px;
+  left: 2px;
+}
+
+.restau-block {
+  width: 100%;
+  padding-top: 10%;
+  background-color: #eaeaea;
+  padding-bottom: 10%;
+}
+.restau-block .restau-titre_margin {
+  margin-left: 4%;
+}
+.restau-block .restau-prev {
+  border-radius: 15px;
+  margin: 11% 0 0 5%;
+  background-color: white;
+  width: 91%;
+  padding-bottom: 2%;
+  position: relative;
+}
+.restau-block .restau-prev-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 -10% 70%;
+  background-color: #99e2dd;
+  width: 20%;
+  height: 29px;
+  z-index: 1;
+  position: relative;
+  color: #008766;
+}
+.restau-block .restau-prev .restau-prev-img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+.restau-block .restau-prev .restau-titre-prev_margin {
+  margin-top: 15px;
+  margin-left: 4%;
+  color: black;
+}
+.restau-block .restau-prev .restau-titre-prev_margin .restau-coeur {
+  margin-left: 88%;
+  font-size: 25px;
+}
+.restau-block .restau-prev .restau-titre-prev_margin .restau-coeur:hover {
+  background: -webkit-linear-gradient(left, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: var(--fa-font-solid);
+  font-size: 25px;
+}
+.restau-block .restau-prev .restau-texte-prev_margin {
+  margin: -35px 0 0 4%;
+  padding-bottom: 15px;
+  font-size: 17px;
+  color: black;
+}
+
+.footer-block {
+  background-color: #353535;
+  width: 100%;
+  margin-top: -20px;
+  padding-bottom: 5%;
+}
+.footer-block .footer-titre_style_margin {
+  color: white;
+  font-family: "Shrikhand", cursive;
+  padding-top: 25px;
+  margin-left: 22px;
+  font-style: 18px;
+  font-style: italic;
+}
+.footer-block .footer-lien_margin {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-left: 20px;
+}
+.footer-block .footer-lien_margin .footer-lien_style {
+  text-decoration: none;
+  color: white;
+}
+.footer-block .footer-lien_margin .footer-icone_margin {
+  margin-right: 11px;
+}
+.footer-block .footer-lien_margin .footer-icone_rotate {
+  rotate: 150deg;
+}
+
+/*# sourceMappingURL=style.css.map */
