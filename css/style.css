@@ -85,7 +85,7 @@ a {
 .fonct-block {
   width: 100%;
   margin: 4%;
-  padding-bottom: 10%;
+  padding-bottom: 150px;
 }
 .fonct-block .fonct-case {
   background: #f7f7f7;
@@ -131,15 +131,15 @@ a {
 
 .restau-titre_margin {
   margin-left: 6%;
-  margin-bottom: -50px;
+  margin-bottom: -13%;
   font-size: 24px;
 }
 
 .restau-block {
   width: 100%;
-  padding-top: 10%;
+  padding-top: 50px;
   background-color: #eaeaea;
-  padding-bottom: 10%;
+  padding-bottom: 100px;
 }
 .restau-block .restau-prev {
   border-radius: 15px;
@@ -153,13 +153,20 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 -10% 70%;
   background-color: #99e2dd;
   width: 20%;
   height: 29px;
   z-index: 1;
   position: relative;
   color: #008766;
+  margin-top: -50px;
+}
+.restau-block .restau-prev-news_margin {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: -100px;
+  left: -50px;
 }
 .restau-block .restau-prev .restau-prev-img {
   border-radius: 15px 15px 0 0;
@@ -245,7 +252,7 @@ a {
     margin: 54px 0 0 0;
     padding-left: 160px;
     padding-right: 160px;
-    padding-bottom: 9%;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: row;
   }
@@ -260,49 +267,35 @@ a {
     left: 26px;
   }
   .restau-titre_margin {
-    margin-left: 4%;
-    margin-bottom: -50px;
+    margin-left: 13%;
+    margin-bottom: -100px;
   }
   .restau-block {
     display: flex;
     flex-direction: row;
-    padding-top: 7%;
+    width: auto;
+    padding-top: 9%;
     padding-bottom: 7%;
-    padding-left: 20px;
+    padding-left: 12.6%;
     padding-right: 20px;
-    gap: 26px;
+    gap: 30px;
+    overflow-x: auto;
+  }
+  .restau-block-block::-webkit-scrollbar {
+    width: 0;
   }
   .restau-block .restau-prev {
-    width: 330px;
+    min-width: 400px;
     margin: 0 0 0 0;
     padding-bottom: 2%;
   }
   .restau-block .restau-prev-news {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 -10% 65%;
     width: 100px;
     height: 29px;
   }
-  .restau-block .restau-prev .restau-prev-img {
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 300px;
-  }
-  .restau-block .restau-prev .restau-titre-prev_margin {
-    margin-top: 15px;
-    margin-left: 4%;
-  }
-  .restau-block .restau-prev .restau-titre-prev_margin .restau-coeur {
-    margin-left: 88%;
-    font-size: 25px;
-  }
-  .restau-block .restau-prev .restau-texte-prev_margin {
-    margin: -35px 0 0 4%;
-    padding-bottom: 15px;
-    font-size: 17px;
-    color: black;
+  .restau-block .restau-prev-news_margin {
+    bottom: -70px;
+    left: -20px;
   }
   .footer-block {
     height: 100px;

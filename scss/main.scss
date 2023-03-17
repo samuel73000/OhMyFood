@@ -74,7 +74,7 @@ a {
 .fonct-block {
   width: 100%;
   margin: 4%;
-  padding-bottom: 10%;
+  padding-bottom: 150px;
 
   .fonct-case {
     @include case-fonctionnement;
@@ -112,14 +112,15 @@ a {
 // restaurants
 .restau-titre_margin {
   margin-left: 6%;
-  margin-bottom: -50px;
+  margin-bottom: -13%;
   font-size: 24px;
+  
 }
 .restau-block {
   width: 100%;
-  padding-top: 10%;
+  padding-top: 50px;
   background-color: $color-gray;
-  padding-bottom: 10%;
+  padding-bottom: 100px;
 
   .restau-prev {
     border-radius: 15px;
@@ -130,19 +131,28 @@ a {
     position: relative;
     &-news {
       @include align-center;
-      margin: 0 0 -10% 70%;
       background-color: #99e2dd;
       width: 20%;
       height: 29px;
       z-index: 1;
       position: relative;
       color: #008766;
+      margin-top: -50px;
+      
+    }
+    &-news_margin{
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      bottom: -100px;
+      left: -50px;
     }
     .restau-prev-img {
       border-radius: 15px 15px 0 0;
       width: 100%;
       height: 300px;
     }
+    
 
     .restau-titre-prev_margin {
       margin-top: 15px;
@@ -207,7 +217,12 @@ a {
   }
 }
 
+
+
+
 // mediaqueries pc
+
+
 
 @media (min-width: 1439px) {
   // header et logo de page d'accueil
@@ -241,7 +256,7 @@ a {
     margin: 54px 0 0 0;
     padding-left: 160px;
     padding-right: 160px;
-    padding-bottom: 9%;
+    padding-bottom: 10%;
     @include horizontal-align;
 
     .fonct-case {
@@ -261,51 +276,42 @@ a {
   // RESTAURANTS
 
   .restau-titre_margin {
-    margin-left: 4%;
-    margin-bottom: -50px;
+    margin-left: 13%;
+    margin-bottom: -100px;
   }
   .restau-block {
     @include horizontal-align;
-    padding-top: 7%;
+    width: auto;
+    padding-top: 9%;
     padding-bottom: 7%;
-    padding-left: 20px;
+    padding-left: 12.6%;
     padding-right: 20px;
-    gap: 26px;
+    gap: 30px;
+    overflow-x: auto;
+    
+    &-block::-webkit-scrollbar{
+      width: 0;
+      // faire disparaitre la scroll bar de section restau fontionne pas 
+      // display: none;
+      // -ms-overflow-style: none;
+      //  scrollbar-width: none;
+    }
 
     .restau-prev {
-      width: 330px;
+      min-width: 400px;
       margin: 0 0 0 0;
       padding-bottom: 2%;
 
       &-news {
-        @include align-center;
-        margin: 0 0 -10% 65%;
         width: 100px;
         height: 29px;
       }
-      .restau-prev-img {
-        border-radius: 15px 15px 0 0;
-        width: 100%;
-        height: 300px;
-      }
-
-      .restau-titre-prev_margin {
-        margin-top: 15px;
-        margin-left: 4%;
-
-        .restau-coeur {
-          margin-left: 88%;
-          font-size: 25px;
-        }
-      }
-
-      .restau-texte-prev_margin {
-        margin: -35px 0 0 4%;
-        padding-bottom: 15px;
-        font-size: 17px;
-        color: black;
+      &-news_margin{
+        bottom: -70px;
+        left: -20px;
       }
     }
+    
   }
 
   // footer
@@ -328,3 +334,13 @@ a {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
