@@ -38,3 +38,17 @@
     font-weight: 500;
     @include align-center;
   }
+
+  @mixin hover-coeur{
+    &:hover {
+      background: -webkit-linear-gradient(
+        200deg,
+        #9356dc -5.2%,
+        #ff79da 110%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font: var(--fa-font-solid);
+      font-size: 25px;
+    }
+  }

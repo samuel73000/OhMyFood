@@ -25,7 +25,7 @@ a {
   // box shadow ne veut pas fonctionner ???????????????????
   // box-shadow: 0px 2px 4px  rgba(0, 0, 0, 0.15);
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 10px 0;
   @include align-center;
   .header-logo {
     width: 50%;
@@ -131,7 +131,7 @@ a {
     position: relative;
     &-news {
       @include align-center;
-      background-color: #99e2dd;
+      background-color: $color-green;
       width: 20%;
       height: 29px;
       z-index: 1;
@@ -162,17 +162,7 @@ a {
       .restau-coeur {
         margin-left: 88%;
         font-size: 25px;
-        &:hover {
-          background: -webkit-linear-gradient(
-            200deg,
-            #9356dc -5.2%,
-            #ff79da 110%
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font: var(--fa-font-solid);
-          font-size: 25px;
-        }
+        @include hover-coeur
       }
     }
 
@@ -338,7 +328,88 @@ a {
 
 
 
+// page restaurants 
 
+// header / logo
+.header-logo_margin{
+margin-right: 50px;
+}
+.header-fleche_margin{
+  margin-right: 64px;
+}
+//  header img restaurant
+.restau-prev-img{
+  width: 100%;
+}
+
+.menu_padding{
+  position: relative;
+  z-index: 1;
+  padding-top: 1px;
+  margin-top: -40px;
+  border-radius: 25px 25px 0 0;
+background-color: $color-background-menu;
+// titre nom du restaurant
+  .menu-titre_size{
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+    font-style: italic;
+    margin-left: 17px;
+
+    .menu-coeur{
+      margin-left: 40px;
+      @include hover-coeur
+    }
+  }
+  // sous-titre et menu entrées 
+  .menu-sous-titre_padding{
+    padding: 0 310px 0 15px;
+  
+    .menu-sous-titre_size{
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: $color-green solid 3px;
+    padding-bottom: 5px;
+  }}
+// menu prev 
+  .menu-prev{
+    width: 93%;
+    margin-left: 13px;
+    border-radius: 15px;
+    background-color: white;
+    padding-bottom: 0.1px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+
+    .menu-prev-plat{
+      z-index: 0;
+      padding-top: 12px;
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .menu-prev-détail-plat{
+      z-index: 0;
+      font-size: 15px;
+      margin-top: -12px;
+      margin-left: 10px;
+      padding-bottom:12px ;
+    }
+    .menu-prev-prix{
+      z-index: 0;
+      font-weight: 700;
+      font-size: 15px;
+      margin-left: 300px;
+      margin-top: -45px;
+    }
+  }
+  // bouton commander
+  .menu-btn{
+    @include btn-voilet-bleu-round;
+    margin-left: 22%;
+    margin-top: 53px;
+    margin-bottom: 53px;
+  }
+}
 
 
 

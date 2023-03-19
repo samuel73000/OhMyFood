@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   object-fit: cover;
@@ -18,7 +19,7 @@ a {
 
 .header-block {
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,6 +317,93 @@ a {
     display: flex;
     flex-direction: row;
   }
+}
+.header-logo_margin {
+  margin-right: 50px;
+}
+
+.header-fleche_margin {
+  margin-right: 64px;
+}
+
+.restau-prev-img {
+  width: 100%;
+}
+
+.menu_padding {
+  position: relative;
+  z-index: 1;
+  padding-top: 1px;
+  margin-top: -40px;
+  border-radius: 25px 25px 0 0;
+  background-color: #f6f6f6;
+}
+.menu_padding .menu-titre_size {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  font-style: italic;
+  margin-left: 17px;
+}
+.menu_padding .menu-titre_size .menu-coeur {
+  margin-left: 40px;
+}
+.menu_padding .menu-titre_size .menu-coeur:hover {
+  background: -webkit-linear-gradient(200deg, #9356dc -5.2%, #ff79da 110%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: var(--fa-font-solid);
+  font-size: 25px;
+}
+.menu_padding .menu-sous-titre_padding {
+  padding: 0 310px 0 15px;
+}
+.menu_padding .menu-sous-titre_padding .menu-sous-titre_size {
+  font-size: 16px;
+  font-weight: 300;
+  border-bottom: #99e2dd solid 3px;
+  padding-bottom: 5px;
+}
+.menu_padding .menu-prev {
+  width: 93%;
+  margin-left: 13px;
+  border-radius: 15px;
+  background-color: white;
+  padding-bottom: 0.1px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+}
+.menu_padding .menu-prev .menu-prev-plat {
+  z-index: 0;
+  padding-top: 12px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu_padding .menu-prev .menu-prev-détail-plat {
+  z-index: 0;
+  font-size: 15px;
+  margin-top: -12px;
+  margin-left: 10px;
+  padding-bottom: 12px;
+}
+.menu_padding .menu-prev .menu-prev-prix {
+  z-index: 0;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 300px;
+  margin-top: -45px;
+}
+.menu_padding .menu-btn {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: 0px;
+  color: white;
+  height: 40px;
+  width: 50%;
+  cursor: pointer;
+  margin-left: 22%;
+  margin-top: 53px;
+  margin-bottom: 53px;
 }
 
 /*# sourceMappingURL=style.css.map */
