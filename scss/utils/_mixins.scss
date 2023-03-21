@@ -1,54 +1,50 @@
 @mixin btn-voilet-bleu-round {
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    border-radius: 25px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border: 0px;
-    color: white;
-    height: 40px;
-    width: 50%;
-    cursor: pointer;
-  }
-  @mixin align-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  @mixin titre {
-    font-size: 24px;
-    font-weight: 700px;
-    color: black;
-    line-height: 28.13px;
-  }
-  @mixin vertical-align {
-    display: flex;
-    flex-direction: column;
-  }
-  @mixin horizontal-align {
-    display: flex;
-    flex-direction: row;
-  }
-  @mixin case-fonctionnement {
-    background: #f7f7f7;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    height: 70px;
-    width: 85%;
-    margin-left: 15px;
-    margin-bottom: -25px;
-    font-weight: 500;
-    @include align-center;
-  }
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: 0px;
+  color: white;
+  height: 40px;
+  width: 50%;
+  cursor: pointer;
+}
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin titre {
+  font-size: 24px;
+  font-weight: 700px;
+  color: black;
+  line-height: 28.13px;
+}
+@mixin vertical-align {
+  display: flex;
+  flex-direction: column;
+}
+@mixin horizontal-align {
+  display: flex;
+  flex-direction: row;
+}
+@mixin case-fonctionnement {
+  background: #f7f7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  height: 70px;
+  width: 85%;
+  margin-left: 15px;
+  margin-bottom: -25px;
+  font-weight: 500;
+  @include align-center;
+}
 
-  @mixin hover-coeur{
-    &:hover {
-      background: -webkit-linear-gradient(
-        200deg,
-        #9356dc -5.2%,
-        #ff79da 110%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font: var(--fa-font-solid);
-      font-size: 25px;
-    }
+@mixin hover-coeur {
+  &:hover {
+    background: -webkit-linear-gradient(200deg, #9356dc -5.2%, #ff79da 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: var(--fa-font-solid);
+    font-size: 25px;
   }
+}
