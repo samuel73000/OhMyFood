@@ -1,0 +1,22 @@
+.loader{
+    position: fixed;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    z-index: 2;
+    inset: 0;
+    opacity: 0.9;
+    animation: disappear 200ms 2s;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    
+}
+@keyframes disappear{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
