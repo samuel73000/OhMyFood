@@ -7,6 +7,7 @@
 }
 //  header img restaurant
 .restau-prev-img {
+  height: 300px;
   width: 100%;
 }
 
@@ -48,6 +49,7 @@
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    
     .menu-prev-plat {
       padding-top: 12px;
       margin-left: 10px;
@@ -65,6 +67,7 @@
       font-size: 15px;
       margin-left: 80%;
       margin-top: -45px;
+      
     }
     .menu-prev-valide {
       color: white;
@@ -78,7 +81,16 @@
       border-radius: 0 18px 18px 0;
       z-index: 1;
       position: relative;
+      opacity: 0;
+      
+    }
+    &:hover .menu-prev-prix{
+      margin-left: 70%;
+      transition: 1s ease-in-out;
+    }
+    &:hover .menu-prev-valide {
       opacity: 1;
+      transition: 1s ease-in-out ;
     }
   }
 
