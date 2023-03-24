@@ -1,9 +1,19 @@
 // header / logo
+.header-block-restau{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0 10px 0;
+  
+}
 .header-logo_margin {
-  margin-right: 50px;
+  width: 165px;
+  margin-right: 35%;
+  margin-left: 25%;
+  
 }
 .header-fleche_margin {
-  margin-right: 64px;
+    margin-left: 20px;
 }
 //  header img restaurant
 .restau-prev-img {
@@ -96,12 +106,15 @@
   }
 
   // bouton commander
+  .menu-btn-padding{
+@include align-center;
+    
   .menu-btn {
     @include btn-voilet-bleu-round;
-    margin-left: 22%;
     margin-top: 53px;
     margin-bottom: 53px;
-  }
+    
+  }}
 }
 
 
@@ -110,10 +123,12 @@
 @media (min-width: 1439px){
   // header / logo
 .header-logo_margin {
-  margin-right: 35%;
+  width: 200px;
+  margin-right: 45%;
+  margin-left: 25%;
 }
 .header-fleche_margin {
-  padding-right: 450px;
+  margin-left: 50px;
 }
 // menu
 .menu_padding {
@@ -129,12 +144,12 @@
   .menu-sous-titre_padding {
     padding: 0 130px 0 15px;
     width: 200px;
-    margin-left: 200px;
+    margin-left: 20%;
   }
   // menu prev
   .menu-prev {
     width: 60%;
-    margin-left: 210px;
+    margin-left: 20%;
     margin-right: 210px;
     .menu-prev-prix {
       font-weight: 700;
@@ -152,13 +167,85 @@
     }
   }
   // bouton commander
-  .menu-btn {
-    width: 20%;
-    margin-left: 400px;
+  .menu-btn-padding{
+    @include align-center;
   }
+  .menu-btn-padding{
+    @include align-center;
+        
+      .menu-btn {
+        @include btn-voilet-bleu-round;
+        margin-top: 53px;
+        margin-bottom: 53px;
+        
+      }}
 }}
 
 // mediaqueries tablette 
 
+
+@media (min-width: 768px) and (max-width:1439px){
+ // header / logo
+ .header-logo_margin {
+  width: 200px;
+  margin-right: 40%;
+  margin-left: 25%;
+}
+.header-fleche_margin {
+  margin-left: 50px;
+}
+
+// menu
+.menu_padding {
+  margin-left:90px ;
+  margin-right:90px ;
+  // titre nom du restaurant
+  .menu-titre_size {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include align-center;
+  }
+  // sous-titre et menu entrées
+  .menu-sous-titre_padding {
+    padding: 0 130px 0 15px;
+    width: 200px;
+    margin-left: 20px;
+  }
+  // menu prev
+  .menu-prev {
+    width: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
+    .menu-prev-prix {
+      font-weight: 700;
+      font-size: 15px;
+      margin-left: 90%;
+      margin-top: -45px;
+    }
+    .menu-prev-valide {
+      width: 10%;
+      margin-left: 90%;
+      padding: 25px 20px 25px 20px;
+    }
+    &:hover .menu-prev-prix{
+      margin-left: 80%;
+    }
+  }
+  // bouton commander
+  .menu-btn-padding{
+    @include align-center;
+  }
+  .menu-btn-padding{
+    @include align-center;
+        
+      .menu-btn {
+        @include btn-voilet-bleu-round;
+        margin-top: 53px;
+        margin-bottom: 53px;
+        
+      }}
+}
+
+}
 
 
