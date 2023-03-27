@@ -1,1 +1,37 @@
-
+.menu-prev-plat {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .menu-prev-détail-plat {
+    font-size: 15px;
+    margin-top: -12px;
+    margin-left: 10px;
+  }
+  .menu-prev-prix {
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 80%;
+    margin-top: -45px;
+    
+  }
+  .menu-prev-valide {
+    color: white;
+    font-size: 21px;
+    width: 0%;
+    background-color: $color-green;
+    margin-top: -70px;
+    margin-left: 80%;
+    @include align-center;
+    border-radius: 0 18px 18px 0;
+    z-index: 1;
+    position: relative;
+  }
+  &:hover .menu-prev-prix{
+    margin-left: 70%;
+    transition: 1.5s ease-in-out;
+  }
+  &:hover .menu-prev-valide {
+    width: 20%;
+    transition: 1.5s ease-in-out ; 
+  }

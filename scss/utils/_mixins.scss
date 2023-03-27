@@ -50,11 +50,12 @@
 
 @mixin hover-coeur {
   &:hover {
+    animation: 5s;
     background: -webkit-linear-gradient(250deg, #9356dc -5.2%, #ff79da 110%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font: var(--fa-font-solid);
     font-size: 25px;
-    animation: 10s ease-in-out;
+    
   }
 }

@@ -1,3 +1,5 @@
+@import"./animation.scss";
+
 // header / logo
 .header-block-restau{
   display: flex;
@@ -44,6 +46,8 @@
   .menu-sous-titre_padding {
     padding: 0 130px 0 15px;
     width: 200px;
+    margin-top: 42px;
+    margin-bottom: 12px;
 
     .menu-sous-titre_size {
       font-size: 16px;
@@ -57,52 +61,63 @@
   .menu-prev {
     width: 93%;
     margin-left: 13px;
+    margin-bottom: 12px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    @include horizontal-align;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
     
     .menu-prev-plat {
-      padding-top: 12px;
-      margin-left: 10px;
+      padding: 0;
       font-size: 18px;
       font-weight: 500;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width:240px;
     }
     .menu-prev-détail-plat {
+      padding: 0;
+      margin-top: -15px;
       font-size: 15px;
-      margin-top: -12px;
-      margin-left: 10px;
-      padding-bottom: 12px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width:240px;
     }
-    .menu-prev-prix {
+    .menu-prix-margin{
+      margin-bottom: -15px;
       font-weight: 700;
-      font-size: 15px;
-      margin-left: 80%;
-      margin-top: -45px;
-      
     }
-    .menu-prev-valide {
+    .menu-prix-valide_margin{
+    @include horizontal-align;
+    align-items: center;
+    gap: 17px;
+    overflow:hidden;
+    }
+    
+    .menu-prev-valide{
+      width: 0;
+      height: 100%;
       color: white;
-      font-size: 21px;
-      width: 20%;
+      border-radius: 0 15px 15px 0;
+    font-size: 21px;
+    display: grid;
+    place-items: center;
+    
+    }
+    &:hover {
+    .menu-prev-valide {
+      width: 50px;
+      height: 100%;
       background-color: $color-green;
-      margin-top: -70px;
-      margin-left: 80%;
-      padding: 25px 20px 25px 20px;
-      @include align-center;
-      border-radius: 0 18px 18px 0;
-      z-index: 1;
-      position: relative;
-      opacity: 0;
+      transition: 1s;
     }
-    &:hover .menu-prev-prix{
-      margin-left: 70%;
-      transition: 1.5s ease-in-out;
-    }
-    &:hover .menu-prev-valide {
-      opacity: 1;
-      transition: 1.5s ease-in-out ;
-      
-    }
+  i{
+    animation: valide_spin 1s ease;
+  }}
   }
 
   // bouton commander
@@ -147,25 +162,7 @@
     margin-left: 20%;
   }
   // menu prev
-  .menu-prev {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 210px;
-    .menu-prev-prix {
-      font-weight: 700;
-      font-size: 15px;
-      margin-left: 90%;
-      margin-top: -45px;
-    }
-    .menu-prev-valide {
-      width: 10%;
-      margin-left: 90%;
-      padding: 25px 20px 25px 20px;
-    }
-    &:hover .menu-prev-prix{
-      margin-left: 80%;
-    }
-  }
+  
   // bouton commander
   .menu-btn-padding{
     @include align-center;
@@ -212,25 +209,7 @@
     margin-left: 20px;
   }
   // menu prev
-  .menu-prev {
-    width: 95%;
-    margin-left: 20px;
-    margin-right: 20px;
-    .menu-prev-prix {
-      font-weight: 700;
-      font-size: 15px;
-      margin-left: 90%;
-      margin-top: -45px;
-    }
-    .menu-prev-valide {
-      width: 10%;
-      margin-left: 90%;
-      padding: 25px 20px 25px 20px;
-    }
-    &:hover .menu-prev-prix{
-      margin-left: 80%;
-    }
-  }
+  
   // bouton commander
   .menu-btn-padding{
     @include align-center;
