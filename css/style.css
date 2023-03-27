@@ -117,11 +117,11 @@ a {
 }
 .menu_padding .menu-prev:hover .menu-prev-prix {
   margin-left: 70%;
-  transition: 1s ease-in-out;
+  transition: 1.5s ease-in-out;
 }
 .menu_padding .menu-prev:hover .menu-prev-valide {
   opacity: 1;
-  transition: 1s ease-in-out;
+  transition: 1.5s ease-in-out;
 }
 .menu_padding .menu-btn-padding {
   display: flex;
