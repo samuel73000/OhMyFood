@@ -69,23 +69,23 @@
     justify-content: space-between;
     padding: 0 0 0 10px;
     
+    .menu-prev_width{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 80%;
+    }
     .menu-prev-plat {
       padding: 0;
       font-size: 18px;
       font-weight: 500;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      width:240px;
+      
     }
     .menu-prev-détail-plat {
       padding: 0;
       margin-top: -15px;
       font-size: 15px;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      width:240px;
+  
     }
     .menu-prix-margin{
       margin-bottom: -15px;
