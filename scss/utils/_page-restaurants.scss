@@ -30,6 +30,7 @@
   margin-top: -40px;
   border-radius: 25px 25px 0 0;
   background-color: $color-background-menu;
+  
   // titre nom du restaurant
   .menu-titre_size {
     font-family: "Shrikhand", cursive;
@@ -58,6 +59,8 @@
     }
   }
   // menu prev
+  
+
   .menu-prev {
     width: 93%;
     margin-left: 13px;
@@ -119,6 +122,43 @@
     animation: valide_spin 1s ease;
   }}
   }
+  // appear
+  .appear1{
+    animation: appear 1.5s;
+    animation-delay: 0.2s;
+  }
+  .appear2{
+    animation: appear 1.5s;
+    animation-delay: 0.4s;
+  }
+  .appear3{
+    animation: appear 1.5s;
+    animation-delay: 0.6s;
+  }
+  .appear4{
+    animation: appear 1.5s;
+    animation-delay: 0.8s;
+  }
+  .appear5{
+    animation: appear 1.5s;
+    animation-delay: 1s;
+  }
+  .appear6{
+    animation: appear 1.5s;
+    animation-delay: 1.2s;
+  }
+  .appear7{
+    animation: appear 1.5s;
+    animation-delay: 1.4s;
+  }
+  .appear8{
+    animation: appear 1.5s;
+    animation-delay: 1.6s;
+  }
+  .appear9{
+    animation: appear 1.5s;
+    animation-delay: 1.8s;
+  }
 
   // bouton commander
   .menu-btn-padding{
@@ -149,6 +189,7 @@
 .menu_padding {
   margin-left:193px ;
   margin-right:193px ;
+ 
   // titre nom du restaurant
   .menu-titre_size {
     padding-top: 20px;
@@ -162,7 +203,11 @@
     margin-left: 20%;
   }
   // menu prev
-  
+  .menu-prev {
+    width: 60%;
+    margin-left: 20%
+    
+  }
   // bouton commander
   .menu-btn-padding{
     @include align-center;
@@ -206,9 +251,14 @@
   .menu-sous-titre_padding {
     padding: 0 130px 0 15px;
     width: 200px;
-    margin-left: 20px;
+    margin-left: 20%;
   }
   // menu prev
+  .menu-prev {
+    width: 60%;
+    margin-left: 20%
+    
+  }
   
   // bouton commander
   .menu-btn-padding{

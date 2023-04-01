@@ -25,6 +25,14 @@ a {
     transform: rotate(0);
   }
 }
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .header-block-restau {
   display: flex;
   align-items: center;
@@ -70,6 +78,7 @@ a {
   -webkit-text-fill-color: transparent;
   font: var(--fa-font-solid);
   font-size: 25px;
+  transition: all 400ms ease-in-out;
 }
 .menu_padding .menu-sous-titre_padding {
   padding: 0 130px 0 15px;
@@ -140,6 +149,42 @@ a {
 .menu_padding .menu-prev:hover i {
   animation: valide_spin 1s ease;
 }
+.menu_padding .appear1 {
+  animation: appear 1.5s;
+  animation-delay: 0.2s;
+}
+.menu_padding .appear2 {
+  animation: appear 1.5s;
+  animation-delay: 0.4s;
+}
+.menu_padding .appear3 {
+  animation: appear 1.5s;
+  animation-delay: 0.6s;
+}
+.menu_padding .appear4 {
+  animation: appear 1.5s;
+  animation-delay: 0.8s;
+}
+.menu_padding .appear5 {
+  animation: appear 1.5s;
+  animation-delay: 1s;
+}
+.menu_padding .appear6 {
+  animation: appear 1.5s;
+  animation-delay: 1.2s;
+}
+.menu_padding .appear7 {
+  animation: appear 1.5s;
+  animation-delay: 1.4s;
+}
+.menu_padding .appear8 {
+  animation: appear 1.5s;
+  animation-delay: 1.6s;
+}
+.menu_padding .appear9 {
+  animation: appear 1.5s;
+  animation-delay: 1.8s;
+}
 .menu_padding .menu-btn-padding {
   display: flex;
   justify-content: center;
@@ -185,6 +230,10 @@ a {
   .menu_padding .menu-sous-titre_padding {
     padding: 0 130px 0 15px;
     width: 200px;
+    margin-left: 20%;
+  }
+  .menu_padding .menu-prev {
+    width: 60%;
     margin-left: 20%;
   }
   .menu_padding .menu-btn-padding {
@@ -237,7 +286,11 @@ a {
   .menu_padding .menu-sous-titre_padding {
     padding: 0 130px 0 15px;
     width: 200px;
-    margin-left: 20px;
+    margin-left: 20%;
+  }
+  .menu_padding .menu-prev {
+    width: 60%;
+    margin-left: 20%;
   }
   .menu_padding .menu-btn-padding {
     display: flex;
@@ -465,6 +518,7 @@ a {
   -webkit-text-fill-color: transparent;
   font: var(--fa-font-solid);
   font-size: 25px;
+  transition: all 400ms ease-in-out;
 }
 .restau-block .restau-prev .restau-texte-prev_margin {
   margin: -35px 0 0 4%;
