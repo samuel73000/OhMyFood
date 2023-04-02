@@ -261,18 +261,17 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 30px;
-  row-gap: 5%;
-  column-gap: 5%;
+  gap: 6%;
   @include horizontal-align;
   @include align-center;
   flex-wrap: wrap;
+  padding-right: 200px;
+  padding-left: 200px;
 
   .restau-prev {
-    display: grid;
     border-radius: 15px;
     margin: 11% 0 0 5%;
     width: 490px;
-    padding-bottom: 2%;
     &-news {
       width: 15%;
     }

@@ -608,21 +608,20 @@ a {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 30px;
-    row-gap: 5%;
-    column-gap: 5%;
+    gap: 6%;
     display: flex;
     flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-right: 200px;
+    padding-left: 200px;
   }
   .restau-block .restau-prev {
-    display: grid;
     border-radius: 15px;
     margin: 11% 0 0 5%;
     width: 490px;
-    padding-bottom: 2%;
   }
   .restau-block .restau-prev-news {
     width: 15%;
