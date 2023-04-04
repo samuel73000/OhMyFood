@@ -117,7 +117,7 @@
     margin: 11% 0 0 5%;
     background-color: white;
     width: 91%;
-    padding-bottom: 2%;
+    height: 290px;
     position: relative;
     &-news {
       @include align-center;
@@ -148,19 +148,21 @@
       margin-top: 15px;
       margin-left: 4%;
       color: black;
-
-      .restau-coeur {
-        margin-left: 88%;
-        font-size: 25px;
-        @include hover-coeur
-      }
     }
 
     .restau-texte-prev_margin {
-      margin: -35px 0 0 4%;
-      padding-bottom: 15px;
+      margin-left: 4%;
+      margin-top: -10px;
       font-size: 17px;
       color: black;
+    }
+    .restau-coeur {
+      position: relative;
+      top: -70px;
+      left: 85%;
+      z-index: 2;
+      font-size: 25px;
+      @include hover-coeur;
     }
   }
 }
@@ -261,7 +263,6 @@
 .restau-block {
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 30px;
   @include horizontal-align;
   @include align-center;
   flex-wrap: wrap;
@@ -272,7 +273,7 @@
     border-radius: 15px;
     margin: 5% 0 0 0;
     width: 40%;
-    padding-bottom: 0;
+    padding-bottom: 3%;
     &-news {
       width: 15%;
     }
@@ -346,7 +347,6 @@
     .restau-prev {
       min-width: 400px;
       margin: 0 0 0 0;
-      padding-bottom: 2%;
   
       &-news {
         width: 100px;

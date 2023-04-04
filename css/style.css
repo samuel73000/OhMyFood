@@ -505,7 +505,7 @@ a {
   margin: 11% 0 0 5%;
   background-color: white;
   width: 91%;
-  padding-bottom: 2%;
+  height: 290px;
   position: relative;
 }
 .restau-block .restau-prev-news {
@@ -537,23 +537,26 @@ a {
   margin-left: 4%;
   color: black;
 }
-.restau-block .restau-prev .restau-titre-prev_margin .restau-coeur {
-  margin-left: 88%;
+.restau-block .restau-prev .restau-texte-prev_margin {
+  margin-left: 4%;
+  margin-top: -10px;
+  font-size: 17px;
+  color: black;
+}
+.restau-block .restau-prev .restau-coeur {
+  position: relative;
+  top: -70px;
+  left: 85%;
+  z-index: 2;
   font-size: 25px;
 }
-.restau-block .restau-prev .restau-titre-prev_margin .restau-coeur:hover {
+.restau-block .restau-prev .restau-coeur:hover {
   background: -webkit-linear-gradient(250deg, #9356dc -5.2%, #ff79da 110%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font: var(--fa-font-solid);
   font-size: 25px;
   transition: all 400ms ease-in-out;
-}
-.restau-block .restau-prev .restau-texte-prev_margin {
-  margin: -35px 0 0 4%;
-  padding-bottom: 15px;
-  font-size: 17px;
-  color: black;
 }
 
 .footer-block {
@@ -636,7 +639,6 @@ a {
   .restau-block {
     width: 100%;
     padding-top: 30px;
-    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     display: flex;
@@ -649,7 +651,7 @@ a {
     border-radius: 15px;
     margin: 5% 0 0 0;
     width: 40%;
-    padding-bottom: 0;
+    padding-bottom: 3%;
   }
   .restau-block .restau-prev-news {
     width: 15%;
@@ -710,7 +712,6 @@ a {
   .restau-block .restau-prev {
     min-width: 400px;
     margin: 0 0 0 0;
-    padding-bottom: 2%;
   }
   .restau-block .restau-prev-news {
     width: 100px;
