@@ -105,8 +105,8 @@ a {
   padding: 0 0 0 10px;
 }
 .menu_padding .menu-prev .menu-prev_width {
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
   width: 80%;
 }
@@ -114,11 +114,15 @@ a {
   padding: 0;
   font-size: 18px;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu_padding .menu-prev .menu-prev-détail-plat {
   padding: 0;
   margin-top: -15px;
   font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu_padding .menu-prev .menu-prix-margin {
   margin-bottom: -15px;
@@ -141,7 +145,7 @@ a {
   place-items: center;
 }
 .menu_padding .menu-prev:hover .menu-prev-valide {
-  width: 50px;
+  width: 70px;
   height: 100%;
   background-color: #99e2dd;
   transition: 1s;

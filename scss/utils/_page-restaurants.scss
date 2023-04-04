@@ -71,10 +71,11 @@
     @include horizontal-align;
     justify-content: space-between;
     padding: 0 0 0 10px;
+
     
     .menu-prev_width{
-      text-overflow: ellipsis;
       overflow: hidden;
+      text-overflow: ellipsis;
       white-space: nowrap;
       width: 80%;
     }
@@ -82,12 +83,16 @@
       padding: 0;
       font-size: 18px;
       font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
       
     }
     .menu-prev-détail-plat {
       padding: 0;
       margin-top: -15px;
       font-size: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
   
     }
     .menu-prix-margin{
@@ -113,7 +118,7 @@
     }
     &:hover {
     .menu-prev-valide {
-      width: 50px;
+      width: 70px;
       height: 100%;
       background-color: $color-green;
       transition: 1s;
