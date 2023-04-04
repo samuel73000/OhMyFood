@@ -580,13 +580,13 @@ a {
     height: 50px;
   }
   .fonct-titre-margin {
-    margin-left: 15%;
+    margin-left: 8%;
   }
   .fonct-block {
     width: 100%;
     margin: 54px 0 0 0;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 40px;
+    padding-right: 7%;
     padding-bottom: 5%;
     display: flex;
     flex-direction: row;
@@ -605,27 +605,25 @@ a {
     left: 5%;
   }
   .restau-titre_margin {
-    margin-left: 16%;
+    margin-left: 8%;
     margin-bottom: -5%;
   }
   .restau-block {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 30px;
-    gap: 6%;
     display: flex;
     flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-right: 200px;
-    padding-left: 200px;
+    gap: 5%;
   }
   .restau-block .restau-prev {
     border-radius: 15px;
-    margin: 11% 0 0 5%;
-    width: 490px;
+    margin: 5% 0 0 0;
+    width: 40%;
   }
   .restau-block .restau-prev-news {
     width: 15%;

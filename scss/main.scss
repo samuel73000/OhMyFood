@@ -225,13 +225,13 @@
 
   //   fontionnement
   .fonct-titre-margin {
-    margin-left: 15%;
+    margin-left: 8%;
   }
   .fonct-block {
     width: 100%;
     margin: 54px 0 0 0;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 40px;
+    padding-right: 7%;
     padding-bottom: 5%;
     @include horizontal-align;
 
@@ -251,9 +251,10 @@
     }
   }
 
+
 // RESTAURANTS
 .restau-titre_margin {
-  margin-left: 16%;
+  margin-left: 8%;
   margin-bottom: -5%;
   
 }
@@ -261,17 +262,16 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 30px;
-  gap: 6%;
   @include horizontal-align;
   @include align-center;
   flex-wrap: wrap;
-  padding-right: 200px;
-  padding-left: 200px;
+  gap: 5%;
+  
 
   .restau-prev {
     border-radius: 15px;
-    margin: 11% 0 0 5%;
-    width: 490px;
+    margin: 5% 0 0 0;
+    width: 40%;
     &-news {
       width: 15%;
     }
