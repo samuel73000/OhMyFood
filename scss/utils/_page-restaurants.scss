@@ -59,7 +59,7 @@
     }
   }
   // menu prev
-  
+
 
   .menu-prev {
     width: 93%;
@@ -71,7 +71,14 @@
     @include horizontal-align;
     justify-content: space-between;
     padding: 0 0 0 10px;
-
+    animation: appear 1.5s ;
+    @for $i from 1 through 15{
+      &:nth-child(#{$i}){
+        animation-fill-mode: both;
+        animation-delay: 100ms * $i;
+      }
+    }
+    
     
     .menu-prev_width{
       overflow: hidden;
@@ -128,42 +135,7 @@
   }}
   }
   // appear
-  .appear1{
-    animation: appear 1.5s;
-    animation-delay: 0.2s;
-  }
-  .appear2{
-    animation: appear 1.5s;
-    animation-delay: 0.4s;
-  }
-  .appear3{
-    animation: appear 1.5s;
-    animation-delay: 0.6s;
-  }
-  .appear4{
-    animation: appear 1.5s;
-    animation-delay: 0.8s;
-  }
-  .appear5{
-    animation: appear 1.5s;
-    animation-delay: 1s;
-  }
-  .appear6{
-    animation: appear 1.5s;
-    animation-delay: 1.2s;
-  }
-  .appear7{
-    animation: appear 1.5s;
-    animation-delay: 1.4s;
-  }
-  .appear8{
-    animation: appear 1.5s;
-    animation-delay: 1.6s;
-  }
-  .appear9{
-    animation: appear 1.5s;
-    animation-delay: 1.8s;
-  }
+  
 
   // bouton commander
   .menu-btn-padding{
