@@ -411,7 +411,7 @@ a {
 }
 .explo-block .explo-titre-center .titre {
   font-size: 24px;
-  font-weight: 700px;
+  font-weight: 700;
   color: black;
   line-height: 28.13px;
 }
@@ -570,7 +570,6 @@ a {
   font-family: "Shrikhand", cursive;
   padding-top: 25px;
   margin-left: 22px;
-  font-style: 18px;
   font-style: italic;
 }
 .footer-block .footer-lien_margin {
