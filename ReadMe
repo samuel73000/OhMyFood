@@ -1,0 +1,53 @@
+# OhMyFood - Réserver Votre Menu
+
+Bienvenue sur le projet OhMyFood, un site Web qui vous permet de découvrir différents restaurants, de consulter leurs menus et de précommander un repas pour une expérience gastronomique unique. Le site est développé en utilisant du HTML et du SCSS pour les styles et est conçu pour être responsive, offrant une expérience utilisateur optimale sur PC, tablette et mobile.
+
+
+
+## Fonctionnalités
+
+- Découvrez une sélection de restaurants.
+- Consultez les menus des restaurants.
+- Précommandez votre repas pour une expérience gastronomique optimale.
+- Design élégant et convivial adapté à PC, tablette et mobile.
+
+
+## Installation
+
+1. Clonez ce référentiel sur votre machine :
+
+git clone https://github.com/samuel73000/OhMyFood
+
+
+2. Accédez au répertoire du projet :
+
+cd ohmyfood
+
+
+3. Ouvrez le fichier `index.html` dans votre navigateur pour visualiser le site.
+
+## Structure du Projet
+
+- `index.html`: La page d'accueil du site.
+- `style.scss`: Le fichier source SCSS pour les styles du site. Vous devrez le compiler en CSS avant de visualiser le site.
+- `styles.css`: Le fichier de styles CSS compilé à partir de `style.scss`.
+
+
+## Personnalisation
+
+Si vous souhaitez personnaliser ce projet, vous pouvez :
+
+- Modifier les fichiers HTML et SCSS pour changer l'apparence et le contenu du site.
+- Ajouter de nouveaux restaurants et menus au site.
+
+## Contributeurs
+
+- [Pouard Samuel]
+
+Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une issue ou à envoyer une demande de pull request.
+
+
+
+---
+
+© Pouard Samuel
